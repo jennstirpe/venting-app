@@ -3,3 +3,53 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url(../resources/clouds.jpg);
+
+    #btn-info {
+        border: none;
+        background: none;
+        padding: 0;
+        width: 2rem;
+    }
+
+    #main-form {
+        width: 19.75rem;
+        
+        textarea {
+            background: #f0f0f040;
+            border: 2px solid #f0f0f040;
+            border-radius: .5rem .5rem 0 0;
+            resize: none;
+            box-shadow: 0 0 2rem #0000004d;
+
+            &:focus {
+                outline: none !important;
+                border: 2px solid #ffffff;
+                box-shadow: inset 0 0 2rem #ffffff;
+
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
+            
+        }
+
+        .btn-submit {
+            height: 3.5rem;
+            background: #a0afc373;
+            width: 19.8rem;
+            border-radius: 0 0 .5rem .5rem;
+            box-shadow: 0 0 2rem #0000004d;
+            transition: background-color 150ms linear;
+            
+            &:hover {
+                background-color: #8ca5be;
+            }
+        }
+    }
+}
+
